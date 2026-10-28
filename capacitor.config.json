@@ -1,0 +1,6 @@
+{
+  "appId": "com.itabo.asistencias",
+  "appName": "AsistenciasItabo",
+  "webDir": "www",
+  "server": { "androidScheme": "https" }
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1d4ea8">
+<title>AsistenciasItabo</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="wp-0">
+
+
+<main id="login" class="login">
+  <form id="loginForm" class="card login-card" autocomplete="off">
+    <div class="logo-wrap"><img src="img/itabo.png" alt="Logo Agropecuaria Itabo" class="logo"></div>
+    <h1>AsistenciasItabo</h1>
+    <p class="muted">Control de asistencia del personal</p>
+
+    <label class="lbl" for="lUser">Usuario</label>
+    <input id="lUser" required autocapitalize="none" placeholder="ej: gerente">
+
+    <label class="lbl" for="lPass">Contraseña</label>
+    <input id="lPass" type="password" required placeholder="••••">
+
+    <p id="lErr" class="err" hidden></p>
+    <button class="btn primary big" type="submit">Ingresar</button>
+
+    <p class="muted small">Cuentas de prueba (clave <b>1234</b>):</p>
+    <div class="chips" id="chips"></div>
+  </form>
+</main>
+
+<!-- APP -->
+<div id="app" hidden>
+  <header class="top">
+    <div class="brand"><span class="logo-pill"><img src="img/itabo.png" alt="Itabo"></span><b>AsistenciasItabo</b></div>
+    <div class="who"><span id="whoName"></span><img id="whoImg" class="avatar sm" alt=""></div>
+  </header>
+  <main id="content"></main>
+  <nav id="nav" class="nav"></nav>
+</div>
+
+<div id="modal" class="modal" hidden><div class="sheet" id="sheet"></div></div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
